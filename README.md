@@ -9,6 +9,7 @@ You are also welcome to create an issue, where you put the contents of your writ
 
 **Web**
 * [Registration](web/registration/writeup.md)
+* [Calculator](web/awesome-calculator/writeup.md)
 
 **Crypto**
 * [Indistinguishable](crypto/indistinguishable/writeup-indistinguishable.md)
