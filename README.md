@@ -6,6 +6,7 @@ You are also welcome to create an issue, where you put the contents of your writ
 ## Current Writeups
 **Reversing**
 * [Reversing 101](reversing/reversing-101/writeup.md)
+* [pwcheck](reversing/pwcheck/writeup.md)
 
 **Web**
 * [Registration](web/registration/writeup.md)
