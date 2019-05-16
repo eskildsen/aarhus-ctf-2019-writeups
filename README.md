@@ -9,3 +9,6 @@ You are also welcome to create an issue, where you put the contents of your writ
 
 **Web**
 * [Registration](web/registration/writeup.md)
+
+**Crypto**
+* [Indistinguishable](crypto/indistinguishable/writeup-indistinguishable.md)
