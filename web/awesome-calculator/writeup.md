@@ -163,5 +163,22 @@ Number of characters:  36
 CTF{Executing_Commands_Are_Awesome!}
 ```
 
+# Final notes
+While the above method is one way to solve it, there is actually a much easier way to do so!
+This is a injection challenge, so when you have anything to do regarding injection, try to figure out what is happening on the server and IF you can escape anything. 
+What makes this challenge hard is, that you can get some output without doing proper escape of the command the server actually calls, which leads many in the rather hard and tedious way.
+But if you realise that the command the server actually calls is something like `calculator "$input"`, then it becomes very apparent, that you can escape it simply using `"`. 
+The final payload can then be written as just
+
+```
+2+2"&&cat${IFS}/srv/app/fla""g.txt"
+```
+
+Which is also a solution!
+
+The actual source can be seen [here](https://gitlab.com/deviosec/challenges/aarhusctf2019/web-awesome-calculator/blob/master/src/srv/app/app.py#L39).
+
 ---
 *Writeup by Morten Eskildsen*
+
+*Additional solution added by Johan Hempel Bengtson (eyJhb)*
