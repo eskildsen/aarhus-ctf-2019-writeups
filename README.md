@@ -14,3 +14,6 @@ You are also welcome to create an issue, where you put the contents of your writ
 
 **Crypto**
 * [Indistinguishable](crypto/indistinguishable/writeup-indistinguishable.md)
+
+**Pwnables**
+* [Bookmanager](pwnables/bookmanager/writeup.md)
