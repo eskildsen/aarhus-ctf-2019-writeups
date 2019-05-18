@@ -49,7 +49,19 @@ Since we are dealing with very large numbers we import the `gmpy2` library. This
 Now let's take a look at the ciphertext. It is encoded as hex and represents a very large number: 
 
 ````
-0x270194c61dc35055e24e5666d0e3d55a1a56101e5671c8ba64b9bb1b134a20307180f1408e8d945196b1fbeaf058f6f25401e77b244d053ec9130538a81c45a589a5919b154c7ada1f34e8aa680421823418950f0d66574d6dac2ea0d852b6b1e6093e282682019f36c20957497bab0f9f0e9fa44cdb34384aac29654d916ede051f6d77eb29af166a4e631fbd8f12236980e23c34f3213f961a5c6c8bb22d1591c25358762c9be1cd8f0332c60d095a79b417205dfbafc80125c8cba867c3705b0daf0f3f7c38db4201320387f27dc0e52c13b39e587d643aa9090ee7e36ac4b95c8c0c4b7fb820e3d151c4a068aeebd29130ecdbbdf597e99a11032770dd77
+0x270194c61dc35055e24e5666d0e3d55a1a56101
+e5671c8ba64b9bb1b134a20307180f1408e8d9451
+96b1fbeaf058f6f25401e77b244d053ec9130538a
+81c45a589a5919b154c7ada1f34e8aa6804218234
+18950f0d66574d6dac2ea0d852b6b1e6093e28268
+2019f36c20957497bab0f9f0e9fa44cdb34384aac
+29654d916ede051f6d77eb29af166a4e631fbd8f1
+2236980e23c34f3213f961a5c6c8bb22d1591c253
+58762c9be1cd8f0332c60d095a79b417205dfbafc
+80125c8cba867c3705b0daf0f3f7c38db42013203
+87f27dc0e52c13b39e587d643aa9090ee7e36ac4b
+95c8c0c4b7fb820e3d151c4a068aeebd29130ecdb
+bdf597e99a11032770dd77
 ````
 
 Running the algorithm on our ciphertext yields the two prime factors `p` and `q`:
@@ -85,7 +97,7 @@ Now that we have `p` and `q` we can reconstruct the private key by referring to 
 5. Compute `d = e^-1 mod phi`, that is the multiplicative inverse of `e` modulo `phi` using the [Extended Euclidean Algorithm](https://en.wikipedia.org/wiki/Extended_Euclidean_algorithm).
 
 
-We now have 1, 2 and 4 and need to compute the last two. Computing `phi` is straightforward. The last point requires an implementation of the extended euclidean algorithm. This is fortunately very easy to find for basically any language you choose to program in. I borrowed an implementation from [WikiBooks](https://en.wikibooks.org/wiki/Algorithm_Implementation/Mathematics/Extended_Euclidean_algorithm).
+We now have 1, 2 and 4 and need to compute the last two. Computing `phi` is straightforward. The last point requires an implementation of the extended euclidean algorithm. This is fortunately very easy to find for basically any language you choose to program in. I borrowed an implementation from [WikiBooks](https://en.wikibooks.org/wiki/Algorithm_Implementation/Mathematics/Extended_Euclidean_algorithm):
 
 ````python
 def xgcd(a, b):
