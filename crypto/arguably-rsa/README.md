@@ -1,16 +1,16 @@
 # Repeated XOR 2: Electric Boogaloo
 ## Challenge Information
 
-CTF name: Aarhus CTF, 10/05/2019
-Team name: Sweaty Blanket Monsters
-Challenge name: Arguably RSA
-Challenge description: The file contains an RSA public key and a ciphertext. Can you break the encryption and get the flag?
-Challenge category => Crypto
-Challenge points => 304/500, (15 teams solved)
+* CTF name: Aarhus CTF, 10/05/2019
+* Team name: Sweaty Blanket Monsters
+* Challenge name: Arguably RSA
+* Challenge description: The file contains an RSA public key and a ciphertext. Can you break the encryption and get the flag?
+* Challenge category => Crypto
+* Challenge points => 304/500, (15 teams solved)
 
 
 ## Arguably RSA
-![challenge](./writeupfiles/challenge.png)
+![challenge](./writeupfiles/challenge.PNG)
 
 The contents of the flag.txt file was as follows:
 
@@ -29,7 +29,7 @@ Noting that e = 3, I know that if the flag isn't padded, it may be possible to s
 
 I took the third root of c, and converted it from decimal to ascii, and there was the flag :)
 
-![flag](writeupfiles/flag.png)
+![flag](./writeupfiles/flag.PNG)
 
 I've cleaned up a short python script which takes c, finds the third root, converts the decimal number to binary, then converts the binary to ascii, and prints the flag.  This script can be found [here](getflag.py).
 
@@ -37,7 +37,7 @@ I've cleaned up a short python script which takes c, finds the third root, conve
 A brief explanation of the theory/googling required to solve this exercise.
 
 Below is the wikipedia explanation of RSA encryption and decryption, given three numbers, e, d and n. Generally e and n are publically known, and d is the secret key which can decrypt messages. Due to some math used when choosing n and d, the below equations are true.
-![wikipedia](writeupfiles/wiki.png)
+![wikipedia](./writeupfiles/wiki.PNG)
 
 From the encryption section we can see that the cipher, c, is given by taking modulo n of plaintext, m, raised to the power of e.
 
