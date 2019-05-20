@@ -17,7 +17,7 @@ def find_cube_root(n):
 
 def is_perfect_cube(n):
     return find_cube_root(n)**3 == n
-	
+
 def printflag(input):
     decimalflag = find_cube_root(input)
     hexflag = hex(decimalflag)

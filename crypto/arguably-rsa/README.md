@@ -1,11 +1,11 @@
 # Repeated XOR 2: Electric Boogaloo
 ## Challenge Information
 
-CTF name: Aarhus CTF, 10/05/2019  
+CTF name: Aarhus CTF, 10/05/2019
 Team name: Sweaty Blanket Monsters
 Challenge name: Arguably RSA
 Challenge description: The file contains an RSA public key and a ciphertext. Can you break the encryption and get the flag?
-Challenge category => Crypto  
+Challenge category => Crypto
 Challenge points => 304/500, (15 teams solved)
 
 
@@ -23,9 +23,9 @@ Looking at this file, there doesn't seem to be anything obviously wrong with n, 
 
 This leaves the ciphertext, and e = 3.
 
-After a few attempts to crack n through various factorisation attack with no luck, i decided to have a go at the cyphertext. 
+After a few attempts to crack n through various factorisation attack with no luck, i decided to have a go at the cyphertext.
 
-Noting that e = 3, I know that if the flag isn't padded, it may be possible to simply decrypt ti without the key. 
+Noting that e = 3, I know that if the flag isn't padded, it may be possible to simply decrypt ti without the key.
 
 I took the third root of c, and converted it from decimal to ascii, and there was the flag :)
 
@@ -39,7 +39,7 @@ A brief explanation of the theory/googling required to solve this exercise.
 Below is the wikipedia explanation of RSA encryption and decryption, given three numbers, e, d and n. Generally e and n are publically known, and d is the secret key which can decrypt messages. Due to some math used when choosing n and d, the below equations are true.
 ![wikipedia](writeupfiles/wiki.png)
 
-From the encryption section we can see that the cipher, c, is given by taking modulo n of plaintext, m, raised to the power of e. 
+From the encryption section we can see that the cipher, c, is given by taking modulo n of plaintext, m, raised to the power of e.
 
 In our example, because the message was just the flag, the decimal representation of the flag raised to the third power was still shorter than n, and as such, the modulo operator did nothing.
 
