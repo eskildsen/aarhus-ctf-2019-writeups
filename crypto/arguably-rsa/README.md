@@ -10,7 +10,7 @@ Challenge points => 304/500, (15 teams solved)
 
 
 ## Arguably RSA
-![challenge](writeupfiles/challenge.png)
+![challenge](./writeupfiles/challenge.png)
 
 The contents of the flag.txt file was as follows:
 
