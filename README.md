@@ -16,6 +16,7 @@ You are also welcome to create an issue, where you put the contents of your writ
 **Crypto**
 * [Pierre](crypto/pierre/pierre.md)
 * [Indistinguishable](crypto/indistinguishable/writeup-indistinguishable.md)
+* [Arguably RSA](crypto/arguably-rsa/README.md)
 * [Repeated XOR 2 Electric Boogaloo](crypto/repeated-xor-2-electric-boogaloo/1/README.md)
 * [Repeated XOR 2 Electric Boogaloo (another writeup)](crypto/repeated-xor-2-electric-boogaloo/2/README.md)
 
