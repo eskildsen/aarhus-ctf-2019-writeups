@@ -19,6 +19,7 @@ You are also welcome to create an issue, where you put the contents of your writ
 * [Arguably RSA](crypto/arguably-rsa/README.md)
 * [Repeated XOR 2 Electric Boogaloo](crypto/repeated-xor-2-electric-boogaloo/1/README.md)
 * [Repeated XOR 2 Electric Boogaloo (another writeup)](crypto/repeated-xor-2-electric-boogaloo/2/README.md)
+* [3DES-HMAC](crypto/3des-hmac/README.md)
 
 **Pwnables**
 * [Bookmanager](pwnables/bookmanager/writeup.md)
